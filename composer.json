@@ -1,0 +1,25 @@
+{
+  "name": "salvatoredeploy/ambiente-php",
+  "description": "Ambiente Inicial para Desenvolvimento de PHP",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Henrique J. Araujo",
+      "email": "liderhenrique@gmail.com"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": ["source/Config.php"]
+  },
+  "require": {
+    "coffeecode/datalayer": "1.1.2",
+    "ext-pdo": "*"
+  }
+}
